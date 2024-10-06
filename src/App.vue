@@ -1,23 +1,23 @@
 <script setup lang="ts">
-import { ref, shallowRef, type Ref } from 'vue'
+defineProps({
+    /* ✓ GOOD */
+    msg: String,
+    greetingText: String,
+    /* ✗ BAD */
+    'greeting-text': String,
+})
 
-/* ✗ BAD */
-const count = ref() // Returns Ref<any> that is not type checked
-count.value = '50' // Should be a type error, but it is not
-
-const count = shallowRef()
-
-/* ✓ GOOD */
-// const count = ref<number>()
-// const count = ref(0)
-// const count: Ref<number | undefined> = ref()
+function add() {
+    return 1 + 1;
+}
+let x = 10;
 </script>
 
 <template>
     <!-- ✓ GOOD -->
-    <!-- <ol v-for="i in 5">
+    <ol v-for="i in 5">
         <li>{{ i }}</li>
-    </ol> -->
+    </ol>
 
     <!-- ✗ BAD -->
     <ol v-for="i in 5">
