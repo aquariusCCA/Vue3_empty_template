@@ -1,6 +1,9 @@
 import App from './App.vue'
 import { createApp } from 'vue'
 
+// 引入 Router
+import router from './router/index.ts';
+
 // 引入 ElementPlus
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
@@ -9,9 +12,9 @@ import zhTw from 'element-plus/dist/locale/zh-tw.mjs'
 
 const app = createApp(App)
 
+app.use(router)
 app.use(ElementPlus, {
   locale: zhTw
 })
-
 
 app.mount('#app')
