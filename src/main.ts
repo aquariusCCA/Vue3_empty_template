@@ -13,11 +13,20 @@ import zhTw from 'element-plus/dist/locale/zh-tw.mjs'
 // 引入 Tailwind CSS
 import './assets/tailwind.css';
 
+// 引入 pinia
+import { createPinia } from 'pinia'
+// 引入 pinia-plugin-persistedstate
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
+
 const app = createApp(App)
 
 app.use(router)
 app.use(ElementPlus, {
   locale: zhTw
 })
+
+const pinia = createPinia()
+pinia.use(piniaPluginPersistedstate)
+app.use(pinia)
 
 app.mount('#app')
