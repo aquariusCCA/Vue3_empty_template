@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { sub } from '@/test';
-console.log(sub);
 defineProps({
   /* ✓ GOOD */
   msg: String,
@@ -8,12 +6,6 @@ defineProps({
   /* ✗ BAD */
   // 'greeting-text': String,
 });
-
-function add() {
-  return 1 + 1;
-}
-let x = add();
-console.log(x);
 </script>
 
 <template>
