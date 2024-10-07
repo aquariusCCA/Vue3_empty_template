@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { sub } from './test';
+import { sub } from '@/test';
 console.log(sub);
 defineProps({
   /* ✓ GOOD */
