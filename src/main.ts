@@ -10,6 +10,9 @@ import 'element-plus/dist/index.css'
 // ElementPlus 國際化配置
 import zhTw from 'element-plus/dist/locale/zh-tw.mjs'
 
+// 引入 Tailwind CSS
+import './assets/tailwind.css';
+
 const app = createApp(App)
 
 app.use(router)
