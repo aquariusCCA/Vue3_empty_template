@@ -1,4 +1,4 @@
 {
-  "src/**/*.{ts,vue}": ["npx eslint --fix"],
-  "src/**/*.{ts,json,vue}": ["npx prettier --write"]
+  "*.{ts,js,vue}": ["eslint --fix"],
+  "*.{html,scss,css,vue}": ["prettier --write"]
 }

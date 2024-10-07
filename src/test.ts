@@ -1,3 +1,2 @@
-export const sub=function () {
-  return 1+1
-}
+export const sub=function(){
+return 1+1};
