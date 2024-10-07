@@ -8,7 +8,7 @@ defineProps({
 })
 
 function add() {
-    return 1 + 1;
+return 1+1
 }
 let x = 10;
 </script>
@@ -19,18 +19,18 @@ let x = 10;
         <li>{{ i }}</li>
     </ol>
 
-    <!-- ✗ BAD -->
-    <ol v-for="i in 5">
-        <li>item</li>
-    </ol>
+<!-- ✗ BAD -->
+<ol v-for="i in 5">
+<li>item</li>
+</ol>
 </template>
 
 <style scoped>
 .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
+height: 6em;
+padding: 1.5em;
+will-change: filter;
+transition: filter 300ms;
 }
 
 .logo:hover {
