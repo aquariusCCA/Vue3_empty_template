@@ -1,28 +1,29 @@
 <script setup lang="ts">
 defineProps({
-    /* ✓ GOOD */
-    msg: String,
-    greetingText: String,
-    /* ✗ BAD */
-    'greeting-text': String,
+/* ✓ GOOD */
+msg: String,
+greetingText: String,
+/* ✗ BAD */
+// 'greeting-text': String,
 })
-
+ 
 function add() {
 return 1+1
 }
-let x = 10;
+let x=add();
+console.log(x)
 </script>
 
 <template>
     <!-- ✓ GOOD -->
-    <ol v-for="i in 5">
-        <li>{{ i }}</li>
-    </ol>
+<ol v-for="i in 5" :key="i">
+<li>{{ i }}</li>
+</ol>
 
 <!-- ✗ BAD -->
-<ol v-for="i in 5">
+<!-- <ol v-for="i in 5">
 <li>item</li>
-</ol>
+</ol> -->
 </template>
 
 <style scoped>
