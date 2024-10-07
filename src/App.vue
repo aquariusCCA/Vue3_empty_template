@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import {sub}from'./test'
-console.log(sub)
+import { sub } from './test';
+console.log(sub);
 defineProps({
 /* ✓ GOOD */
 msg: String,
@@ -10,7 +10,7 @@ greetingText: String
 });
 
 function add() {
-return 1+1
+  return 1+1
 }
 let x=add()
 console.log(x)
@@ -30,8 +30,8 @@ console.log(x)
 
 <style scoped>
 .logo {
-height: 6em;
-padding: 1.5em; will-change: filter;
+height: 6em;padding: 1.5em;
+will-change: filter;
 transition: filter 300ms;
 }
 
