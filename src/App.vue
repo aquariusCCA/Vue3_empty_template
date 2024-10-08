@@ -29,3 +29,12 @@ axios
     console.error('Error creating data:', error);
   });
 </script>
+
+<style lang="scss">
+.test {
+  width: 100%;
+  height: 200px;
+  font-size: 20px;
+  background-color: skyblue;
+}
+</style>
