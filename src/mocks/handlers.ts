@@ -37,4 +37,5 @@ async function baseResolver({ request }: { request: Request }) {
 /** 模擬API傳出的請求，並設定API模擬回應 */
 export const handlers = [
   http.post(`${base_api}/userDetail`, baseResolver)
+  // 根據需要增加更多的 API 模擬請求
 ]

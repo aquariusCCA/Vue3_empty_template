@@ -1,3 +1,4 @@
+// src/mocks/seed.ts
 import { setMany } from 'idb-keyval'
 import { userDetail } from './json/testData.json'
 
