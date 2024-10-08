@@ -1,8 +1,5 @@
 {
-    "**/*.{ts,js,vue}": [
-      "eslint --fix"
-    ],
-    "**/*.{html,scss,css,vue}": [
-      "prettier --write"
-    ]
+  "**/*.{ts,js,vue}": ["eslint --fix"],
+  "**/*.{css,scss,vue}": ["stylelint --fix"],
+  "**/*.{html,scss,css,vue}": ["prettier --write"]
 }
