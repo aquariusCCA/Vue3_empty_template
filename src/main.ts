@@ -18,6 +18,9 @@ import { createPinia } from 'pinia';
 // 引入 pinia-plugin-persistedstate
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate';
 
+// 引入svgBundle
+import '../svg/svgBundle.js';
+
 // 引入 Service Worker
 import { startWorker } from './mocks/browser';
 
