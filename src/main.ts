@@ -10,8 +10,8 @@ import 'element-plus/dist/index.css';
 // ElementPlus 國際化配置
 import zhTw from 'element-plus/dist/locale/zh-tw.mjs';
 
-// 引入 Tailwind CSS
-import './assets/tailwind.css';
+// 引入樣式
+import '@/assets/style/all.scss';
 
 // 引入 pinia
 import { createPinia } from 'pinia';
@@ -19,7 +19,7 @@ import { createPinia } from 'pinia';
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate';
 
 // 引入svgBundle
-import '../svg/svgBundle.js';
+import './assets/svg/svgBundle.js';
 
 // 引入 Service Worker
 import { startWorker } from './mocks/browser';
